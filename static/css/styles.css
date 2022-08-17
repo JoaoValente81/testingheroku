@@ -1,0 +1,27 @@
+h1 {position: relative;
+top: -15px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color:rgb(152,145,152);
+text-align: center;}
+
+    h3 {
+        color:azure;
+        text-align: center;}
+    
+    body{background-color: deepskyblue;}
+
+    .content{
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    #input {
+        width: 20em;
+        height: 1.2em;
+        margin-top: 10px;
+    }
+
+    #img {
+        width: 20 em;
+        height: 20 em;
+    }

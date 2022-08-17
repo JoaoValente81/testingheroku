@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Iris Plant</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+    </head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color:aqua; text-align: center">machine learning model on demand</h1>
+    <div class='content'>
+        <form method ='POST'>
+            <label> Sepal leght (cm) </label>
+            <br>
+            <input type="text" name="feature1" id ='input'>
+            <br>
+            <label> Petal leght (cm) </label>
+            <br>
+            <input type="text" name="feature2" id ='input'>
+            <br>
+            <label> Petal width (cm) </label>
+            <br>
+            <input type="text" name="feature3" id ='input'>
+            <br>
+            <label> Setal width (cm) </label>
+            <br>
+            <input type="text" name="feature4" id ='input'>
+            <br>
+            <br>
+            <input type="submit" value="!RUN MODEL!" id ='input'>
+        </form>
+    </div>
+
+    <div>
+        <div class="content">
+            <a href={{url_for('video')}}>Play Video</a>
+        </div>
+    </div>
+
+    <div class="content">
+    {% if pred %}
+    <h3>
+        The result of your prediction is </h3>
+        <h1>{{pred}}</h1>
+    {% endif %}
+
+        {% if pred =='setosa' %}
+            <img src="../static/images/setosa.webp" id="img">
+        {% elif pred =='versicolor' %}
+            <img src="../static/images/versicolor.jpg" id="img">
+        {% elif pred =='virginica' %}
+            <img src="../static/images/virginica.jpg" id="img">
+        {% endif %}
+    </div>
+
+</body>
+</html>
